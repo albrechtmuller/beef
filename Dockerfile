@@ -58,7 +58,7 @@ WORKDIR /beef
 USER beef
 
 # Expose UI, Proxy, WebSocket server, and WebSocketSecure server
-EXPOSE 8080 6789 61985 61986
+EXPOSE 80 6789 61985 61986
 
 ENTRYPOINT ["/beef/beef"]
 # ------------------------------------- End of Builder 1 -------------------------------------------------
