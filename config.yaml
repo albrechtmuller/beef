@@ -36,7 +36,7 @@ beef:
     http:
         debug: false #Thin::Logging.debug, very verbose. Prints also full exception stack trace.
         host: "0.0.0.0"
-        port: "80"
+        port: "8080"
 
         # Decrease this setting to 1,000 (ms) if you want more responsiveness
         #  when sending modules and retrieving results.
@@ -55,9 +55,9 @@ beef:
         #   set both the publicly accessible hostname/IP address and port below:
         # NOTE: Allowing the reverse proxy will enable a vulnerability where the ui/panel can be spoofed
         #   by altering the X-FORWARDED-FOR ip address in the request header.
-        allow_reverse_proxy: false
-        #public: ""      # public hostname/IP address
-        #public_port: "" # public port (experimental)
+        allow_reverse_proxy: true
+        public: "app_1761e1c1-cc46-44d9-b4d5-21dc89f6f259"      # public hostname/IP address
+        public_port: "80" # public port (experimental)
 
         # Hook
         hook_file: "/hook.js"
