@@ -55,7 +55,7 @@ beef:
         #   set both the publicly accessible hostname/IP address and port below:
         # NOTE: Allowing the reverse proxy will enable a vulnerability where the ui/panel can be spoofed
         #   by altering the X-FORWARDED-FOR ip address in the request header.
-        allow_reverse_proxy: true
+        allow_reverse_proxy: false
         public: "app-2ebdf743-bfef-465e-a0e7-488be995f89f.cleverapps.io"      # public hostname/IP address
         public_port: "80" # public port (experimental)
 
